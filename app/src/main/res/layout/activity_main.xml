@@ -10,8 +10,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="a4everstudent.sounddemo.MainActivity">
 
-    <TextView
+    <Button
+        android:text="PAUSE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="14dp"
+        android:id="@+id/pauseButton"
+        android:layout_below="@+id/playButton"
+        android:layout_alignLeft="@+id/playButton"
+        android:layout_alignStart="@+id/playButton"
+        android:onClick="pauseAudio" />
+
+    <Button
+        android:text="PLAY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playButton"
+        android:onClick="playAudio"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="157dp" />
 </RelativeLayout>
